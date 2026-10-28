@@ -1,0 +1,236 @@
+[
+  {
+    "text": "第 1 章 CUDA 简介",
+    "link": "/chapter-1/",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "1.1 引言",
+        "link": "/chapter-1/section-1-1"
+      },
+      {
+        "text": "1.2 编程模型",
+        "link": "/chapter-1/section-1-2"
+      },
+      {
+        "text": "1.3 CUDA 平台",
+        "link": "/chapter-1/section-1-3"
+      }
+    ]
+  },
+  {
+    "text": "第 2 章 使用 CUDA 编程 GPU",
+    "link": "/chapter-2/",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "2.1 CUDA C++ 入门",
+        "link": "/chapter-2/section-2-1"
+      },
+      {
+        "text": "2.2 CUDA Python 入门",
+        "link": "/chapter-2/section-2-2"
+      },
+      {
+        "text": "2.3 编写 SIMT kernel",
+        "link": "/chapter-2/section-2-3"
+      },
+      {
+        "text": "2.4 编写 tile kernel",
+        "link": "/chapter-2/section-2-4"
+      },
+      {
+        "text": "2.5 异步执行",
+        "link": "/chapter-2/section-2-5"
+      },
+      {
+        "text": "2.6 Unified Memory 与 System Memory",
+        "link": "/chapter-2/section-2-6"
+      },
+      {
+        "text": "2.7 NVCC：NVIDIA CUDA 编译器",
+        "link": "/chapter-2/section-2-7"
+      }
+    ]
+  },
+  {
+    "text": "第 3 章 CUDA 进阶",
+    "link": "/chapter-3/",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "3.1 Advanced CUDA APIs and Features",
+        "link": "/chapter-3/section-3-1"
+      },
+      {
+        "text": "3.2 Advanced Kernel Programming",
+        "link": "/chapter-3/section-3-2"
+      },
+      {
+        "text": "3.3 The CUDA Driver API",
+        "link": "/chapter-3/section-3-3"
+      },
+      {
+        "text": "3.4 Programming Systems with Multiple GPUs",
+        "link": "/chapter-3/section-3-4"
+      },
+      {
+        "text": "3.5 A Tour of CUDA Features",
+        "link": "/chapter-3/section-3-5"
+      }
+    ]
+  },
+  {
+    "text": "第 4 章 CUDA 功能",
+    "link": "/chapter-4/",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "4.1 Unified Memory",
+        "link": "/chapter-4/section-4-1"
+      },
+      {
+        "text": "4.2 CUDA Graphs",
+        "link": "/chapter-4/section-4-2"
+      },
+      {
+        "text": "4.3 Stream-Ordered Memory Allocator",
+        "link": "/chapter-4/section-4-3"
+      },
+      {
+        "text": "4.4 Cooperative Groups",
+        "link": "/chapter-4/section-4-4"
+      },
+      {
+        "text": "4.5 Programmatic Dependent Launch and Synchronization",
+        "link": "/chapter-4/section-4-5"
+      },
+      {
+        "text": "4.6 Green Contexts",
+        "link": "/chapter-4/section-4-6"
+      },
+      {
+        "text": "4.7 Locality Domains",
+        "link": "/chapter-4/section-4-7"
+      },
+      {
+        "text": "4.8 Lazy Loading",
+        "link": "/chapter-4/section-4-8"
+      },
+      {
+        "text": "4.9 Error Log Management",
+        "link": "/chapter-4/section-4-9"
+      },
+      {
+        "text": "4.10 Asynchronous Barriers",
+        "link": "/chapter-4/section-4-10"
+      },
+      {
+        "text": "4.11 Pipelines",
+        "link": "/chapter-4/section-4-11"
+      },
+      {
+        "text": "4.12 Asynchronous Data Copies",
+        "link": "/chapter-4/section-4-12"
+      },
+      {
+        "text": "4.13 Work Stealing with Cluster Launch Control",
+        "link": "/chapter-4/section-4-13"
+      },
+      {
+        "text": "4.14 L2 Cache Control",
+        "link": "/chapter-4/section-4-14"
+      },
+      {
+        "text": "4.15 Memory Synchronization Domains",
+        "link": "/chapter-4/section-4-15"
+      },
+      {
+        "text": "4.16 Interprocess Communication",
+        "link": "/chapter-4/section-4-16"
+      },
+      {
+        "text": "4.17 Virtual Memory Management",
+        "link": "/chapter-4/section-4-17"
+      },
+      {
+        "text": "4.18 Compute Fabric Transport",
+        "link": "/chapter-4/section-4-18"
+      },
+      {
+        "text": "4.19 Extended GPU Memory",
+        "link": "/chapter-4/section-4-19"
+      },
+      {
+        "text": "4.20 CUDA Dynamic Parallelism",
+        "link": "/chapter-4/section-4-20"
+      },
+      {
+        "text": "4.21 CUDA Interoperability with APIs",
+        "link": "/chapter-4/section-4-21"
+      },
+      {
+        "text": "4.22 Driver Entry Point Access",
+        "link": "/chapter-4/section-4-22"
+      }
+    ]
+  },
+  {
+    "text": "第 5 章 技术附录",
+    "link": "/chapter-5/",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "5.1 Compute Capabilities",
+        "link": "/chapter-5/section-5-1"
+      },
+      {
+        "text": "5.2 CUDA Environment Variables",
+        "link": "/chapter-5/section-5-2"
+      },
+      {
+        "text": "5.3 C++ Language Support",
+        "link": "/chapter-5/section-5-3"
+      },
+      {
+        "text": "5.4 C/C++ Language Extensions",
+        "link": "/chapter-5/section-5-4"
+      },
+      {
+        "text": "5.5 Floating-Point Computation",
+        "link": "/chapter-5/section-5-5"
+      },
+      {
+        "text": "5.6 Device-Callable APIs and Intrinsics",
+        "link": "/chapter-5/section-5-6"
+      },
+      {
+        "text": "5.7 CUDA C++ Memory Model",
+        "link": "/chapter-5/section-5-7"
+      },
+      {
+        "text": "5.8 CUDA C++ Execution model",
+        "link": "/chapter-5/section-5-8"
+      }
+    ]
+  },
+  {
+    "text": "第 6 部分 声明（Notices）",
+    "link": "/chapter-6/",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "6.1 Notice",
+        "link": "/chapter-6/section-6-1"
+      },
+      {
+        "text": "6.2 OpenCL",
+        "link": "/chapter-6/section-6-2"
+      },
+      {
+        "text": "6.3 Trademarks",
+        "link": "/chapter-6/section-6-3"
+      }
+    ]
+  }
+]

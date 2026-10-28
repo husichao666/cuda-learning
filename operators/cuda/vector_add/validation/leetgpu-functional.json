@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-28",
+  "website": "https://leetgpu.com/playground",
+  "displayedToolkit": "CUDA 11.7",
+  "mode": "FUNCTIONAL",
+  "cases": {
+    "baseline": "- generic: Console Output\n- button \"Copy\"\n- textbox \"Terminal input\"\n- generic: Running in FUNCTIONAL mode...\n- generic: Compiling...\n- generic: Executing...\n- generic: \"n=1025: PASS\"\n- generic: \"Exit status: 0\"\n- alert\n- alert",
+    "boundaries": "- generic: Console Output\n- button \"Copy\"\n- textbox \"Terminal input\"\n- generic: Running in FUNCTIONAL mode...\n- generic: Compiling...\n- generic: Executing...\n- generic: \"n=0: PASS (empty input)\"\n- generic: \"n=1: PASS\"\n- generic: \"n=31: PASS\"\n- generic: \"n=32: PASS\"\n- generic: \"n=33: PASS\"\n- generic: \"n=255: PASS\"\n- generic: \"n=256: PASS\"\n- generic: \"n=257: PASS\"\n- generic: \"n=1025: PASS\"\n- generic: \"n=1000003: PASS\"\n- generic: \"Exit status: 0\"\n- alert\n- alert",
+    "random": "- generic: Console Output\n- button \"Copy\"\n- textbox \"Terminal input\"\n- generic: Running in FUNCTIONAL mode...\n- generic: Compiling...\n- generic: Executing...\n- generic: \"n=0: PASS (empty input)\"\n- generic: \"n=1: PASS\"\n- generic: \"n=31: PASS\"\n- generic: \"n=32: PASS\"\n- generic: \"n=33: PASS\"\n- generic: \"n=255: PASS\"\n- generic: \"n=256: PASS\"\n- generic: \"n=257: PASS\"\n- generic: \"n=1025: PASS\"\n- generic: \"n=1000003: PASS\"\n- generic: \"Exit status: 0\"\n- alert\n- alert",
+    "events": "- generic: Console Output\n- button \"Copy\"\n- textbox \"Terminal input\"\n- generic: Running in FUNCTIONAL mode...\n- generic: Compiling...\n- generic: Executing...\n- generic: \"Device: Intel(R) Xeon(R) E-2286M CPU @ 2.40GHz, n=1025, b\"\n- generic: locks=5, threads=256\n- generic: \"Trial 1: 803.936 us/launch\"\n- generic: \"Trial 2: 995.216 us/launch\"\n- generic: \"Trial 3: 701.039 us/launch\"\n- generic: \"Trial 4: 803.119 us/launch\"\n- generic: \"Trial 5: 801.616 us/launch\"\n- generic: \"Median of batch averages: 803.119 us/launch\"\n- generic: \"Range: 701.039 - 995.216 us/launch\"\n- generic: \"n=1025: PASS\"\n- generic: \"Exit status: 0\"\n- alert\n- alert",
+    "roundtrip": "- generic: Console Output\n- button \"Copy\"\n- textbox \"Terminal input\"\n- generic: Running in FUNCTIONAL mode...\n- generic: Compiling...\n- generic: Executing...\n- generic: \"H2D + launch + wait + D2H: 1330.517 us\"\n- generic: \"n=1025: PASS\"\n- generic: \"Exit status: 0\"\n- alert\n- alert"
+  }
+}

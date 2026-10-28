@@ -1,0 +1,19 @@
+{
+  "name": "cuda-learning-docs",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs --host 127.0.0.1",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --host 127.0.0.1",
+    "check": "python3 scripts/check_links.py"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4",
+    "markdown-it-footnote": "4.0.0"
+  }
+}

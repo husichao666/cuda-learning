@@ -1,0 +1,41 @@
+# System and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# JavaScript dependencies and generated documentation
+node_modules/
+.pnpm-store/
+cuda-docs/docs/.vitepress/cache/
+cuda-docs/docs/.vitepress/dist/
+
+# CUDA builds, profiling output and logs
+/build/
+*.o
+*.obj
+*.cubin
+*.fatbin
+*.ptx
+*.nsys-rep
+*.ncu-rep
+*.qdrep
+*.log
+
+# Personal reference downloads and exports; keep the instructions public
+/references/local/*
+!/references/local/README.md

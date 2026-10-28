@@ -1,0 +1,22 @@
+name: 错误反馈
+description: 反馈文档、示例或运行结果中的问题
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: 问题位置与现象
+      description: 提供文件、章节或算子名称，以及预期和实际行为。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现方式
+      description: 提供运行命令、输入尺寸和精简日志。文档勘误可填写对应原文。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 代码问题请写出设备、CUDA、编译器，以及是否使用模拟后端。

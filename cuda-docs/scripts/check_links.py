@@ -2,12 +2,16 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
-import ast, hashlib, json, re
+import argparse, ast, hashlib, json, re
 
 project=Path(__file__).resolve().parents[1]
 legacy=project.parent/'references/cuda-programming-guide/legacy'
 docs=project/'docs'
-built=docs/'.vitepress/dist'
+parser=argparse.ArgumentParser()
+parser.add_argument('--built', type=Path, default=docs/'.vitepress/dist')
+parser.add_argument('--base', default='/')
+args=parser.parse_args()
+built=args.built.resolve()
 assert built.is_dir(), 'Run the VitePress build first.'
 class Page(HTMLParser):
     def __init__(self,path):
@@ -24,7 +28,12 @@ for path,page in pages.items():
     for href in page.links:
         url=urlsplit(href)
         if url.scheme or url.netloc:continue
-        base=(built/unquote(url.path).lstrip('/')) if url.path.startswith('/') else (path.parent/unquote(url.path))
+        target=unquote(url.path)
+        if target.startswith('/'):
+            assert target.startswith(args.base), f'Link escapes site base: {href}'
+            target=target[len(args.base):]
+            base=built/target
+        else:base=path.parent/target
         if not url.path:base=path
         elif url.path.endswith('/'):base=base/'index.html'
         elif not base.suffix:base=base.with_suffix('.html')

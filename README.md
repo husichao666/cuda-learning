@@ -4,6 +4,11 @@
 
 ## 学习入口
 
+- [在线阅读：学习笔记](https://husichao666.github.io/cuda-learning/)：按学习进度持续更新的文章。
+- [在线阅读：CUDA Programming Guide 中文版](https://husichao666.github.io/cuda-learning/guide/)：独立的中文参考文档站，非官方译文。
+
+仓库中的源码与维护入口：
+
 - [学习路线](docs/learning-path.md)：16 周的建议安排，按实际验收进度推进。
 - [第一周笔记](notebook/第一周-硬件介绍与入门代码.md)：GPU 硬件、线程组织、向量加法、边界处理与计时。
 - [算子目录](operators/README.md)：已有实现与后续方向。
@@ -48,6 +53,8 @@ make benchmark-cuda
 pnpm --dir cuda-docs install --frozen-lockfile
 pnpm --dir cuda-docs dev
 ```
+
+两套在线页面由 GitHub Actions 自动发布。后续更新 `notebook/` 中的文章或 `cuda-docs/docs/` 中的参考译文，推送到 `main` 后会自动构建和更新。发布方式见[网站维护说明](docs/website.md)。
 
 ## 目录结构
 

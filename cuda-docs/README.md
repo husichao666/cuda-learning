@@ -1,5 +1,7 @@
 # CUDA 学习文档站
 
+[在线阅读 CUDA Programming Guide 中文版](https://husichao666.github.io/cuda-learning/guide/) · [学习笔记](https://husichao666.github.io/cuda-learning/)
+
 使用开源 [VitePress](https://github.com/vuejs/vitepress) 1.6.4（MIT）构建。网站支持章节侧栏、页内目录、全文搜索、深浅色切换及上一节/下一节导航。
 
 ## 打开网站
@@ -36,7 +38,7 @@ pnpm check
 pnpm preview
 ```
 
-构建产物在 `docs/.vitepress/dist/`，为纯静态 HTML、CSS 与 JavaScript。`scripts/check_links.py` 检查生成页面中的本地链接和锚点、947 个原书编号标题、48 个小节页面及原图一致性。发布到子路径时，应先在 `.vitepress/config.mjs` 配置 `base` 并相应调整自定义首页的链接。
+构建产物在 `docs/.vitepress/dist/`，为纯静态 HTML、CSS 与 JavaScript。`scripts/check_links.py` 检查生成页面中的本地链接和锚点、947 个原书编号标题、48 个小节页面及原图一致性。`pnpm pages:build` 会同时构建学习笔记与中文版指南，为两个站点设置各自的发布路径，详见[网站维护说明](../docs/website.md)。
 
 原文来源：NVIDIA《CUDA Programming Guide》Release 13.4.2。现有第一、二章正文已翻译，第 3–6 部分仍为目录框架。原文及配图权利归各自权利人所有。
 

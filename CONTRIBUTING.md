@@ -41,6 +41,8 @@ make test-cuda
 
 第一周博客与 `vector_add.cu` 的完整示例保持一致，`make check` 会检查这一点。其他独立示例也应与文章中的修改步骤同步维护。
 
+修改笔记、文档或网站时，运行 `pnpm --dir cuda-docs pages:build` 验证两套在线页面。文章与发布流程见[网站维护说明](docs/website.md)；推送到 `main` 后自动更新 GitHub Pages。
+
 ## 资料与许可
 
 原创贡献按本仓库 MIT 许可提供。引用第三方内容时保留来源和许可，不将 NVIDIA 原图、译文涉及的原始内容或依赖改标为本仓库 MIT。新增来源同步写入 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

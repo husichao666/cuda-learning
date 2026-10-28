@@ -23,6 +23,10 @@ node_modules/
 .pnpm-store/
 cuda-docs/docs/.vitepress/cache/
 cuda-docs/docs/.vitepress/dist/
+cuda-docs/notes/.vitepress/cache/
+cuda-docs/notes/.vitepress/dist/
+cuda-docs/notes/articles/
+cuda-docs/notes/public/notebook/
 
 # CUDA builds, profiling output and logs
 /build/

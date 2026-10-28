@@ -32,7 +32,8 @@ def main():
     pages_checked = 0
     for path in markdown_files(ROOT):
         # VitePress routes and anchors have a dedicated post-build checker.
-        if ROOT / "cuda-docs/docs" in path.parents:
+        if any(ROOT / folder in path.parents for folder in
+               ("cuda-docs/docs", "cuda-docs/notes")):
             continue
         text = path.read_text(encoding="utf-8")
         pages_checked += 1
